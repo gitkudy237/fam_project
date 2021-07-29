@@ -583,8 +583,6 @@ a {
 
   position: relative;
   top: 15vh;
-  background: url(../images/shopping-bg.webp);
-  background-size: cover;
 }
 
 .callout--primary {
