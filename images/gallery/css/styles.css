@@ -1,0 +1,64 @@
+html {
+  font-size: 62.5%;
+}
+
+.tab {
+  background: #023753;
+  color: #fff;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.tab ul {
+  padding-left: 0;
+}
+
+.tab li {
+  list-style: none;
+}
+
+.tab button {
+  width: 100%;
+  border: none;
+  background: inherit;
+  color: inherit;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 1rem 0.5rem;
+}
+
+.tab button:hover,
+.tab button.active {
+  background: #106999;
+}
+
+.tab__content {
+  display: none;
+  padding: 0.6rem 1.2rem;
+  border: 1px solid #ccc;
+}
+
+.tab__content {
+  animation: fade-effect 1s;
+}
+@keyframes fade-effect {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.tab img {
+  width: 200px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .tab {
+    width: 25%;
+  }
+}

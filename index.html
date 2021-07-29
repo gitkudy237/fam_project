@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/fontawesome.css" />
+    <link rel="stylesheet" href="css/solid.css" />
+  </head>
+  <body>
+    <!-- Header section-->
+    <header class="nav__wrapper">
+      <nav class="nav container">
+        <input type="checkbox" id="icon-show" />
+        <a href="/"><img class="logo" src="images/logo-lg.png" alt="" /></a>
+
+        <label for="icon-show">
+          <svg onclick="showmenu()" class="icon icon--primary nav__toggler">
+            <use href="images/sprite.svg#menu"></use>
+          </svg>
+        </label>
+        <div class="input-group">
+          <input
+            type="text"
+            class="input"
+            placeholder="Chercher un article......"
+          />
+          <button class="btn btn--accent">
+            <svg class="icon">
+              <use href="images/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+        <ul class="list nav__list">
+          <li class="nav__item"><a href="index.html">Acceuil</a></li>
+          <li class="product nav__item collapsible">
+            <div class="collapsible__header">
+              <span class="special">PRODUITS </span>
+              <svg class="icon icon--small icon--primary collapsible__icon">
+                <use href="images/solid.svg#chevron-down"></use>
+              </svg>
+            </div>
+            <ul class="dropdown collapsible__content">
+              <li class="nav__item">
+                <a href="gallery.html#calecons">Boxers</a>
+              </li>
+              <li class="nav__item"><a href="#">Trousses de bains</a></li>
+              <li class="nav__item"><a href="#">Calecons afritude</a></li>
+              <li class="nav__item"><a href="#">Pyjama long en soie</a></li>
+            </ul>
+          </li>
+          <li id="blog" class="nav__item">
+            <a href="#">blog</a>
+            <span class="blog__message">BIENTOT DISPONIBLE</span>
+          </li>
+          <li id="about" class="nav__item">
+            <a href="#">a propos</a>
+            <span class="about__message">BIENTOT DISPONIBLE</span>
+          </li>
+        </ul>
+        <div class="icon__wrapper">
+          <a href="https://facebook.com/FamCameroun" title="Page Facebook">
+            <svg class="icon icon--secondary">
+              <use href="images/brands.svg#facebook"></use>
+            </svg>
+          </a>
+          <a href="https://twitter.com/FAM_Cameroun?s=09" title="Page Twitter">
+            <svg class="icon icon--secondary">
+              <use href="images/brands.svg#twitter"></use>
+            </svg>
+          </a>
+          <a href="#" title="Page Instagram">
+            <svg class="icon icon--primary">
+              <use href="images/brands.svg#instagram"></use>
+            </svg>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <a href="#">
+      <span class="icon-container to-top">
+        <svg class="icon icon--small icon--white">
+          <use href="images/solid.svg#arrow-up"></use>
+        </svg>
+      </span>
+    </a>
+    <section class="slider">
+      <div class="slide-wrapper">
+        <marquee behavior="|" direction="|" scrollamount="10">
+          <img src="images/crel3.jpg" alt="" />
+          <img src="images/crel.jpg" alt="" />
+          <img src="images/crl.png" alt="" />
+        </marquee>
+      </div>
+    </section>
+    <!-- Gallery preview-->
+    <section class="gallery-preview block grid--cols-2">
+      <div class="container preview__container">
+        <h3 class="gallery__heading">Pyjamas</h3>
+        <div class="scrolling-wrapper">
+          <!-- preview images-->
+          <div class="card gallery__card">
+            <div class="card__header">
+              <img src="images/pyjamas/pyja1.jpg" alt="" />
+              <div class="view-item">
+                <a href="images/pyjamas/pyja1.jpg" target="_blank">
+                  <span class="badge badge--order"
+                    >Apercu
+                    <svg class="icon icon--white">
+                      <use href="images/solid.svg#eye"></use>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+              <div class="order">
+                <a href="https://wa.me/237680963878" target="_blank">
+                  <button class="btn btn--block">
+                    <svg class="icon icon--white">
+                      <use href="images/brands.svg#whatsapp"></use>
+                    </svg>
+                    commander
+                  </button>
+                </a>
+              </div>
+            </div>
+            <section class="card__footer">
+              <div class="article__description">
+                <p class="category__description">pyjama en coton</p>
+                <p class="article__name">Keep warm</p>
+                <p class="article__size">XL</p>
+                <span class="badge article__price">23,000 FCFA</span>
+              </div>
+            </section>
+          </div>
+          <div class="card gallery__card">
+            <div class="card__header">
+              <img src="images/pyjamas/pyja2.jpg" alt="" />
+              <div class="view-item">
+                <a href="images/pyjamas/pyja2.jpg" target="_blank">
+                  <span class="badge badge--order"
+                    >Apercu
+                    <svg class="icon icon--white">
+                      <use href="images/solid.svg#eye"></use>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+              <div class="order">
+                <a href="https://wa.me/237680963878" target="_blank">
+                  <button class="btn btn--block">
+                    <svg class="icon icon--white">
+                      <use href="images/brands.svg#whatsapp"></use>
+                    </svg>
+                    commander
+                  </button>
+                </a>
+              </div>
+            </div>
+            <section class="card__footer">
+              <div class="article__description">
+                <p class="category__description">pyjama en soie</p>
+                <p class="article__name">grassfield night</p>
+                <p class="article__size">XL</p>
+                <span class="badge article__price">25,000 FCFA</span>
+              </div>
+            </section>
+          </div>
+          <div class="card gallery__card">
+            <div class="card__header">
+              <img src="images/pyjamas/pyja3.jpg" alt="" />
+              <div class="view-item">
+                <a href="images/pyjamas/pyja3.jpg" target="_blank">
+                  <span class="badge badge--order"
+                    >Apercu
+                    <svg class="icon icon--white">
+                      <use href="images/solid.svg#eye"></use>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+              <div class="order">
+                <a href="https://wa.me/237680963878" target="_blank">
+                  <button class="btn btn--block">
+                    <svg class="icon icon--white">
+                      <use href="images/brands.svg#whatsapp"></use>
+                    </svg>
+                    commander
+                  </button>
+                </a>
+              </div>
+            </div>
+            <section class="card__footer">
+              <div class="article__description">
+                <p class="category__description">pyjama afrtide</p>
+                <p class="article__name">Greasy morning</p>
+                <p class="article__size">XL</p>
+                <span class="badge article__price">17,000 FCFA</span>
+              </div>
+            </section>
+          </div>
+        </div>
+        <a href="galllery_pyjama.html"
+          ><button class="btn btn--secondary gallery__btn">voir plus</button></a
+        >
+      </div>
+      <div class="container preview__container">
+        <h3 class="gallery__heading">Boxers</h3>
+        <div class="scrolling-wrapper">
+          <div class="card gallery__card">
+            <div class="card__header">
+              <img src="images/boxers/boxer4.jpeg" alt="" />
+              <div class="view-item">
+                <a href="images/boxers/boxer4.jpeg" target="_blank">
+                  <span class="badge badge--order"
+                    >Apercu
+                    <svg class="icon icon--white">
+                      <use href="images/solid.svg#eye"></use>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+              <div class="order">
+                <a href="https://wa.me/237680963878" target="_blank">
+                  <button class="btn btn--block">
+                    <svg class="icon icon--white">
+                      <use href="images/brands.svg#whatsapp"></use>
+                    </svg>
+                    commander
+                  </button>
+                </a>
+              </div>
+            </div>
+            <section class="card__footer">
+              <div class="article__description">
+                <p class="category__description">boxers</p>
+                <p class="article__name">le nde</p>
+                <p class="article__size">XL</p>
+                <span class="badge article__price">2,500 FCFA</span>
+              </div>
+            </section>
+          </div>
+          <div class="card gallery__card">
+            <div class="card__header">
+              <img src="images/boxers/boxer6.jpeg" alt="" />
+              <div class="view-item">
+                <a href="images/boxers/boxer6.jpeg" target="_blank">
+                  <span class="badge badge--order"
+                    >Apercu
+                    <svg class="icon icon--white">
+                      <use href="images/solid.svg#eye"></use>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+              <div class="order">
+                <a href="https://wa.me/237680963878" target="_blank">
+                  <button class="btn btn--block">
+                    <svg class="icon icon--white">
+                      <use href="images/brands.svg#whatsapp"></use>
+                    </svg>
+                    commander
+                  </button>
+                </a>
+              </div>
+            </div>
+            <section class="card__footer">
+              <div class="article__description">
+                <p class="category__description">calecon en wooding</p>
+                <p class="article__name">Wooding classic</p>
+                <p class="article__size">XL</p>
+                <span class="badge article__price">10,000 FCFA</span>
+              </div>
+            </section>
+          </div>
+          <div class="card gallery__card">
+            <div class="card__header">
+              <img src="images/boxers/boxer7.jpeg" alt="" />
+              <div class="view-item">
+                <a href="images/boxers/boxer7.jpeg" target="_blank">
+                  <span class="badge badge--order"
+                    >Apercu
+                    <svg class="icon icon--white">
+                      <use href="images/solid.svg#eye"></use>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+              <div class="order">
+                <a href="https://wa.me/237680963878" target="_blank">
+                  <button class="btn btn--block">
+                    <svg class="icon icon--white">
+                      <use href="images/brands.svg#whatsapp"></use>
+                    </svg>
+                    commander
+                  </button>
+                </a>
+              </div>
+            </div>
+            <section class="card__footer">
+              <div class="article__description">
+                <p class="category__description">calecon en wooding</p>
+                <p class="article__name">Wooding blanc</p>
+                <p class="article__size">XL</p>
+                <span class="badge article__price">3,000 FCFA</span>
+              </div>
+            </section>
+          </div>
+        </div>
+        <a href="gallery_boxers.html"
+          ><button class="btn btn--secondary gallery__btn">voir plus</button></a
+        >
+      </div>
+      <div class="container preview__container">
+        <h3 class="gallery__heading">Pyjashirts</h3>
+        <div class="scrolling-wrapper">
+          <div class="card gallery__card">
+            <div class="card__header">
+              <img src="images/tshirt/shirt4.jpg" alt="" />
+              <div class="view-item">
+                <a href="images/tshirt/shirt4.jpg" target="_blank">
+                  <span class="badge badge--order"
+                    >Apercu
+                    <svg class="icon icon--white">
+                      <use href="images/solid.svg#eye"></use>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+              <div class="order">
+                <a href="https://wa.me/237680963878" target="_blank">
+                  <button class="btn btn--block">
+                    <svg class="icon icon--white">
+                      <use href="images/brands.svg#whatsapp"></use>
+                    </svg>
+                    commander
+                  </button>
+                </a>
+              </div>
+            </div>
+            <section class="card__footer">
+              <div class="article__description">
+                <p class="category__description">Pyjashirt</p>
+                <p class="article__name">Stay at home</p>
+                <p class="article__size">XL</p>
+                <span class="badge article__price">12,000 FCFA</span>
+              </div>
+            </section>
+          </div>
+          <div class="card gallery__card">
+            <div class="card__header">
+              <img src="images/tshirt/shirt2.png" alt="" />
+              <div class="view-item">
+                <a href="images/tshirt/shirt2.png" target="_blank">
+                  <span class="badge badge--order"
+                    >Apercu
+                    <svg class="icon icon--white">
+                      <use href="images/solid.svg#eye"></use>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+              <div class="order">
+                <a href="https://wa.me/237680963878" target="_blank">
+                  <button class="btn btn--block">
+                    <svg class="icon icon--white">
+                      <use href="images/brands.svg#whatsapp"></use>
+                    </svg>
+                    commander
+                  </button>
+                </a>
+              </div>
+            </div>
+            <section class="card__footer">
+              <div class="article__description">
+                <p class="category__description">Pyjashirt</p>
+                <p class="article__name">Le Koug-Khi</p>
+                <p class="article__size">XL</p>
+                <span class="badge article__price">10,000 FCFA</span>
+              </div>
+            </section>
+          </div>
+          <div class="card gallery__card">
+            <div class="card__header">
+              <img src="images/tshirt/shirt3.png" alt="" />
+              <div class="view-item">
+                <a href="images/tshirt/shirt3.png" target="_blank">
+                  <span class="badge badge--order"
+                    >Apercu
+                    <svg class="icon icon--white">
+                      <use href="images/solid.svg#eye"></use>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+              <div class="order">
+                <a href="https://wa.me/237680963878" target="_blank">
+                  <button class="btn btn--block">
+                    <svg class="icon icon--white">
+                      <use href="images/brands.svg#whatsapp"></use>
+                    </svg>
+                    commander
+                  </button>
+                </a>
+              </div>
+            </div>
+            <section class="card__footer">
+              <div class="article__description">
+                <p class="category__description">Pyjashirt</p>
+                <p class="article__name">le fako</p>
+                <p class="article__size">XL</p>
+                <span class="badge article__price">10,000 FCFA</span>
+              </div>
+            </section>
+          </div>
+        </div>
+        <a href="gallery_shirt.html"
+          ><button class="btn btn--secondary gallery__btn">voir plus</button></a
+        >
+      </div>
+      <div class="container preview__container">
+        <h3 class="gallery__heading">Trousses de Toilettes</h3>
+        <div class="scrolling-wrapper">
+          <div class="card gallery__card">
+            <div class="card__header">
+              <img src="images/trousses/tdt1.png" alt="" />
+              <div class="view-item">
+                <a href="images/trousses/tdt1.png" target="_blank">
+                  <span class="badge badge--order"
+                    >Apercu
+                    <svg class="icon icon--white">
+                      <use href="images/solid.svg#eye"></use>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+              <div class="order">
+                <a href="https://wa.me/237680963878" target="_blank">
+                  <button class="btn btn--block">
+                    <svg class="icon icon--white">
+                      <use href="images/brands.svg#whatsapp"></use>
+                    </svg>
+                    commander
+                  </button>
+                </a>
+              </div>
+            </div>
+            <section class="card__footer">
+              <div class="article__description">
+                <p class="category__description">Trousse de Toilette</p>
+                <p class="article__name">Le khoung-Khi</p>
+                <p class="article__size"></p>
+                <span class="badge article__price">5,000 FCFA</span>
+              </div>
+            </section>
+          </div>
+        </div>
+        <a href="gallery__trousse.html"
+          ><button class="btn btn--secondary gallery__btn">voir plus</button></a
+        >
+      </div>
+    </section>
+    <!--Showcase-->
+    <section class="showcase block">
+      <header class="block__header">
+        <h2 class="block__heading">NOS PRODUITS ET SERVICES</h2>
+      </header>
+      <div class="container">
+        <ul class="grid grid--cols-2 grid--cols-3">
+          <li class="media">
+            <div class="media__image">
+              <svg class="icon icon--secondary">
+                <use xlink:href="images/regular.svg#check-circle"></use>
+              </svg>
+            </div>
+            <div class="media__body">
+              <h3 class="media__title">Produits de Bonne Qualite</h3>
+              <p class="media__text">
+                Tous les produits que nous vendons sont non seulement de tres
+                bonnes qualites, mais aussi a des prix defiants toute
+                concurrence.
+              </p>
+            </div>
+          </li>
+          <li class="media">
+            <div class="media__image">
+              <svg class="icon icon--secondary">
+                <use xlink:href="images/solid.svg#flag"></use>
+              </svg>
+            </div>
+            <div class="media__body">
+              <h3 class="media__title">Fabriques Locallement</h3>
+              <p class="media__text">
+                Nos produits sont egallement fabriques locallement. Rien de
+                mieux pour encourager la consomation des produits locaux.
+              </p>
+            </div>
+          </li>
+          <li class="media">
+            <div class="media__image">
+              <svg class="icon icon--secondary">
+                <use xlink:href="images/regular.svg#paper-plane"></use>
+              </svg>
+            </div>
+            <div class="media__body">
+              <h3 class="media__title">Possibilite d'Expedition</h3>
+              <p class="media__text">
+                Avec La marque <span class="brand">FAM</span> la distance n'est
+                pass un obstacle. Vous avez la possiblite de faire expedier
+                votre commande dans n'importe quelle ville.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="newsletter block block--dark block--skewed-right">
+      <header class="block__header">
+        <h2 class="block__heading">NEWSLETTER</h2>
+      </header>
+      <div class="container">
+        <p class="newsletter__content">
+          Souscrivez a notre Newsletter pour etre informe de toutes nos
+          nouvelles colections
+        </p>
+        <form action="#" class="newsletter__form grid grid--cols-2">
+          <div class="mail__wrapper">
+            <label for="email">Email:</label>
+            <input
+              class="input"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="addresse@mail.com"
+              required
+            />
+          </div>
+          <button class="btn btn--secondary">souscrire</button>
+        </form>
+      </div>
+    </section>
+    <footer class="block">
+      <div class="block__header">
+        <h2 class="block__heading">SUIVEZ NOUS</h2>
+        <p>suivez nous sur les reseaux pour plus de vetements</p>
+      </div>
+      <div class="footer__content">
+        <div class="container">
+          <h3>Reseaux</h3>
+          <ul class="list social">
+            <li>
+              <a href="#">
+                <svg class="icon icon--secondary">
+                  <use href="images/brands.svg#facebook"></use>
+                </svg>
+                @fam_cameroun
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="icon icon--secondary">
+                  <use href="images/brands.svg#twitter"></use>
+                </svg>
+                @fam_cameroun
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="icon icon--primary">
+                  <use href="images/brands.svg#instagram"></use>
+                </svg>
+                @fam_cameroun
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="container">
+          <h3>Contact</h3>
+          <ul class="list contact">
+            <li>
+              <a href="#">
+                <svg class="icon icon--primary">
+                  <use href="images/brands.svg#whatsapp"></use>
+                </svg>
+                +237 668 345 139
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="icon icon--primary">
+                  <use href="images/solid.svg#envelope"></use>
+                </svg>
+                marcghislain@gmail.com
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="logo__container">
+        <img src="images/logo-lg.png" alt="" />
+        <p id="copyright">&copy; FAM 2021</p>
+      </div>
+    </footer>
+
+    <script src="list.js"></script>
+    <script src="main.js"></script>
+    <script src="preview.js"></script>
+    <script>
+      $(function () {
+        var activeTab = document.querySelector(location.hash);
+        if (activeTab) {
+          $(activeTab).click();
+        }
+      });
+    </script>
+  </body>
+</html>

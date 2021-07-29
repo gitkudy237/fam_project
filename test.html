@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/15cfcb8dd7.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="nav__wrapper">
+      <nav class="nav container">
+        <input type="checkbox" id="icon-show" />
+        <a href="/"><img class="logo" src="images/logo-lg.png" alt="" /></a>
+
+        <label for="icon-show">
+          <svg onclick="showmenu()" class="icon icon--primary nav__toggler">
+            <use href="images/sprite.svg#menu"></use>
+          </svg>
+        </label>
+        <div class="input-group">
+          <input
+            type="text"
+            class="input"
+            placeholder="Chercher un article......"
+          />
+          <button class="btn btn--accent">
+            <svg class="icon">
+              <use href="images/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+        <ul class="list nav__list">
+          <li class="nav__item"><a href="index.html">Acceuil</a></li>
+          <li class="product nav__item collapsible">
+            <div class="collapsible__header">
+              <span class="special">PRODUITS </span>
+              <svg class="icon icon--small icon--primary collapsible__icon">
+                <use href="images/solid.svg#chevron-down"></use>
+              </svg>
+            </div>
+            <ul class="dropdown collapsible__content">
+              <li class="nav__item"><a href="#">Boxers</a></li>
+              <li class="nav__item"><a href="#">Trousses de bains</a></li>
+              <li class="nav__item"><a href="#">Calecons afritude</a></li>
+              <li class="nav__item"><a href="#">Pyjama long en soie</a></li>
+            </ul>
+          </li>
+          <li class="nav__item"><a href="#">blog</a></li>
+          <li class="nav__item"><a href="#">a propos</a></li>
+        </ul>
+        <div class="icon__wrapper">
+          <a href="#">
+            <svg class="icon icon--secondary">
+              <use href="images/brands.svg#facebook"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="icon icon--secondary">
+              <use href="images/brands.svg#twitter"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="icon icon--primary">
+              <use href="images/brands.svg#instagram"></use>
+            </svg>
+          </a>
+        </div>
+      </nav>
+    </header>
+  </body>
+</html>
