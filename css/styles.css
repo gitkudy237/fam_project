@@ -32,6 +32,8 @@ body {
   font-size: 1.6rem;
   word-spacing: 1px;
   letter-spacing: 1px;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 h1,

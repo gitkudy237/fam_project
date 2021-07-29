@@ -1,13 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="description"
+      content="Site camerounais de vente de vetements pour hommes"
+    />
+    <meta property="og:title" content="FAM Shopping" />
+    <meta property="og:description" content="L'essentiel pour hommes" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="images/logo-lg.png" />
+
+    <title>FAM - Acceuil</title>
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/fontawesome.css" />
     <link rel="stylesheet" href="css/solid.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <!-- Header section-->
@@ -44,11 +54,17 @@
             </div>
             <ul class="dropdown collapsible__content">
               <li class="nav__item">
-                <a href="gallery.html#calecons">Boxers</a>
+                <a href="gallery_boxers.html">Boxers</a>
               </li>
-              <li class="nav__item"><a href="#">Trousses de bains</a></li>
-              <li class="nav__item"><a href="#">Calecons afritude</a></li>
-              <li class="nav__item"><a href="#">Pyjama long en soie</a></li>
+              <li class="nav__item">
+                <a href="gallery__trousse.html">Trousses de bains</a>
+              </li>
+              <li class="nav__item">
+                <a href="galllery_pyjama.html">Pyjamas</a>
+              </li>
+              <li class="nav__item">
+                <a href="gallery_shirt.html">Pyjamshirts</a>
+              </li>
             </ul>
           </li>
           <li id="blog" class="nav__item">
@@ -86,7 +102,7 @@
         </svg>
       </span>
     </a>
-    <section class="slider">
+    <section class="slider" data-aos="fade-right">
       <div class="slide-wrapper">
         <marquee behavior="|" direction="|" scrollamount="10">
           <img src="images/crel3.jpg" alt="" />
@@ -97,7 +113,7 @@
     </section>
     <!-- Gallery preview-->
     <section class="gallery-preview block grid--cols-2">
-      <div class="container preview__container">
+      <div class="container preview__container" data-aos="fade-up">
         <h3 class="gallery__heading">Pyjamas</h3>
         <div class="scrolling-wrapper">
           <!-- preview images-->
@@ -115,7 +131,7 @@
                 </a>
               </div>
               <div class="order">
-                <a href="https://wa.me/237680963878" target="_blank">
+                <a href="https://bit.ly/2VgaeCS" target="_blank">
                   <button class="btn btn--block">
                     <svg class="icon icon--white">
                       <use href="images/brands.svg#whatsapp"></use>
@@ -148,7 +164,7 @@
                 </a>
               </div>
               <div class="order">
-                <a href="https://wa.me/237680963878" target="_blank">
+                <a href="https://bit.ly/2VgaeCS" target="_blank">
                   <button class="btn btn--block">
                     <svg class="icon icon--white">
                       <use href="images/brands.svg#whatsapp"></use>
@@ -181,7 +197,7 @@
                 </a>
               </div>
               <div class="order">
-                <a href="https://wa.me/237680963878" target="_blank">
+                <a href="https://bit.ly/2VgaeCS" target="_blank">
                   <button class="btn btn--block">
                     <svg class="icon icon--white">
                       <use href="images/brands.svg#whatsapp"></use>
@@ -205,7 +221,7 @@
           ><button class="btn btn--secondary gallery__btn">voir plus</button></a
         >
       </div>
-      <div class="container preview__container">
+      <div class="container preview__container" data-aos="fade-left">
         <h3 class="gallery__heading">Boxers</h3>
         <div class="scrolling-wrapper">
           <div class="card gallery__card">
@@ -222,7 +238,7 @@
                 </a>
               </div>
               <div class="order">
-                <a href="https://wa.me/237680963878" target="_blank">
+                <a href="https://bit.ly/2VgaeCS" target="_blank">
                   <button class="btn btn--block">
                     <svg class="icon icon--white">
                       <use href="images/brands.svg#whatsapp"></use>
@@ -255,7 +271,7 @@
                 </a>
               </div>
               <div class="order">
-                <a href="https://wa.me/237680963878" target="_blank">
+                <a href="https://bit.ly/2VgaeCS" target="_blank">
                   <button class="btn btn--block">
                     <svg class="icon icon--white">
                       <use href="images/brands.svg#whatsapp"></use>
@@ -288,7 +304,7 @@
                 </a>
               </div>
               <div class="order">
-                <a href="https://wa.me/237680963878" target="_blank">
+                <a href="https://bit.ly/2VgaeCS" target="_blank">
                   <button class="btn btn--block">
                     <svg class="icon icon--white">
                       <use href="images/brands.svg#whatsapp"></use>
@@ -312,7 +328,7 @@
           ><button class="btn btn--secondary gallery__btn">voir plus</button></a
         >
       </div>
-      <div class="container preview__container">
+      <div class="container preview__container" data-aos="fade-right">
         <h3 class="gallery__heading">Pyjashirts</h3>
         <div class="scrolling-wrapper">
           <div class="card gallery__card">
@@ -329,7 +345,7 @@
                 </a>
               </div>
               <div class="order">
-                <a href="https://wa.me/237680963878" target="_blank">
+                <a href="https://bit.ly/2VgaeCS" target="_blank">
                   <button class="btn btn--block">
                     <svg class="icon icon--white">
                       <use href="images/brands.svg#whatsapp"></use>
@@ -362,7 +378,7 @@
                 </a>
               </div>
               <div class="order">
-                <a href="https://wa.me/237680963878" target="_blank">
+                <a href="https://bit.ly/2VgaeCS" target="_blank">
                   <button class="btn btn--block">
                     <svg class="icon icon--white">
                       <use href="images/brands.svg#whatsapp"></use>
@@ -395,7 +411,7 @@
                 </a>
               </div>
               <div class="order">
-                <a href="https://wa.me/237680963878" target="_blank">
+                <a href="https://bit.ly/2VgaeCS" target="_blank">
                   <button class="btn btn--block">
                     <svg class="icon icon--white">
                       <use href="images/brands.svg#whatsapp"></use>
@@ -419,7 +435,7 @@
           ><button class="btn btn--secondary gallery__btn">voir plus</button></a
         >
       </div>
-      <div class="container preview__container">
+      <div class="container preview__container" data-aos="fade-left">
         <h3 class="gallery__heading">Trousses de Toilettes</h3>
         <div class="scrolling-wrapper">
           <div class="card gallery__card">
@@ -436,7 +452,7 @@
                 </a>
               </div>
               <div class="order">
-                <a href="https://wa.me/237680963878" target="_blank">
+                <a href="https://bit.ly/2VgaeCS" target="_blank">
                   <button class="btn btn--block">
                     <svg class="icon icon--white">
                       <use href="images/brands.svg#whatsapp"></use>
@@ -468,7 +484,7 @@
       </header>
       <div class="container">
         <ul class="grid grid--cols-2 grid--cols-3">
-          <li class="media">
+          <li class="media" data-aos="zoom-in">
             <div class="media__image">
               <svg class="icon icon--secondary">
                 <use xlink:href="images/regular.svg#check-circle"></use>
@@ -483,7 +499,7 @@
               </p>
             </div>
           </li>
-          <li class="media">
+          <li class="media" data-aos="zoom-in">
             <div class="media__image">
               <svg class="icon icon--secondary">
                 <use xlink:href="images/solid.svg#flag"></use>
@@ -497,7 +513,7 @@
               </p>
             </div>
           </li>
-          <li class="media">
+          <li class="media" data-aos="zoom-in">
             <div class="media__image">
               <svg class="icon icon--secondary">
                 <use xlink:href="images/regular.svg#paper-plane"></use>
@@ -515,6 +531,7 @@
         </ul>
       </div>
     </section>
+    <!-- Newsletter -->
     <section class="newsletter block block--dark block--skewed-right">
       <header class="block__header">
         <h2 class="block__heading">NEWSLETTER</h2>
@@ -524,23 +541,27 @@
           Souscrivez a notre Newsletter pour etre informe de toutes nos
           nouvelles colections
         </p>
-        <form action="#" class="newsletter__form grid grid--cols-2">
+        <form
+          action="https://formspree.io/f/myylnkyj"
+          method="POST"
+          class="newsletter__form grid grid--cols-2"
+        >
           <div class="mail__wrapper">
             <label for="email">Email:</label>
             <input
               class="input"
               type="email"
-              name="email"
+              name="Email"
               id="email"
               placeholder="addresse@mail.com"
               required
             />
           </div>
-          <button class="btn btn--secondary">souscrire</button>
+          <button type="submit" class="btn btn--secondary">souscrire</button>
         </form>
       </div>
     </section>
-    <footer class="block">
+    <footer class="block" data-aos="zoom-out-up">
       <div class="block__header">
         <h2 class="block__heading">SUIVEZ NOUS</h2>
         <p>suivez nous sur les reseaux pour plus de vetements</p>
@@ -606,13 +627,9 @@
     <script src="list.js"></script>
     <script src="main.js"></script>
     <script src="preview.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      $(function () {
-        var activeTab = document.querySelector(location.hash);
-        if (activeTab) {
-          $(activeTab).click();
-        }
-      });
+      AOS.init();
     </script>
   </body>
 </html>
