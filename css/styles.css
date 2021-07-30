@@ -32,8 +32,6 @@ body {
   font-size: 1.6rem;
   word-spacing: 1px;
   letter-spacing: 1px;
-  width: 100vw;
-  overflow-x: hidden;
 }
 
 h1,
@@ -533,6 +531,10 @@ a {
 }
 
 /* Blocks */
+
+.block {
+  width: 100%;
+}
 .block {
   --padding-vertical: 6rem;
   padding: 6rem 2rem;
@@ -616,26 +618,6 @@ a {
   }
 }
 
-/* Blocks */
-
-.block {
-  --padding-vertical: 6rem;
-}
-
-.block__header {
-  text-align: center;
-  margin-bottom: 4rem;
-}
-
-.block__heading {
-  margin-top: 0;
-}
-
-.block--dark {
-  background: #000;
-  color: #7b858b;
-}
-
 /* container */
 
 .container {
@@ -678,14 +660,14 @@ a {
 .nav__wrapper {
   position: sticky;
   top: 0;
-  width: 100vw;
+  width: 100%;
   background: var(--color-red-white);
-
   z-index: 100;
 }
 
 .nav {
   display: flex;
+  flex-grow: 0;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
@@ -722,11 +704,11 @@ a {
 .nav__list {
   width: 100%;
   margin: 0;
-  padding: 2.5rem 2rem 0;
+  padding: 2rem 2rem 0;
   background: inherit;
-  height: 50vh;
-  position: fixed;
-  top: 190px;
+
+  position: absolute;
+  top: 100%;
   left: -100%;
 
   overflow-y: auto;
@@ -765,7 +747,7 @@ a {
 .nav .icon__wrapper {
   width: 100vw;
   justify-content: space-around;
-  margin: 3rem 5%;
+  margin: 2rem 5% 1rem;
   opacity: 0;
   max-height: 0;
   transition: all 0.25s ease;
@@ -859,9 +841,9 @@ a {
 
   .nav__list {
     display: flex;
+    position: initial;
     justify-content: center;
-    top: 6%;
-    left: 0;
+
     height: 60px;
     margin: auto;
     padding: 0 9%;
@@ -969,9 +951,9 @@ a {
   max-width: 220px;
   background: var(--color-red-white);
   height: 320px;
-
+  margin-inline: 1rem;
   transition: 0.1s;
-  margin-inline: 0.8rem;
+  margin-inline: 1rem;
 }
 
 .gallery__card:hover {
