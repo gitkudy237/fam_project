@@ -1,15 +1,6 @@
 {
-  "name": "FAM-shopping-2",
-  "version": "1.0.0",
-  "description": "",
-  "main": "main.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
-    "cssnano": "^5.0.7"
+    "cssnano": "^5.0.7",
+    "postcss": "^8.3.6"
   }
 }
