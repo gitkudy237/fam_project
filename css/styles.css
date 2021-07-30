@@ -534,6 +534,7 @@ a {
 
 .block {
   width: 100%;
+  overflow-x: hidden;
 }
 .block {
   --padding-vertical: 6rem;
