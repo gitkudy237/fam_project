@@ -773,11 +773,11 @@ a {
   transition: color 0.25s;
   white-space: nowrap;
 }
-.nav__item > a:hover {
+.nav__item a:hover {
   text-decoration: underline;
 }
 
-.nav__item > a:active {
+.nav__item a:active {
   color: var(--color-accent_2);
 }
 
@@ -789,7 +789,7 @@ a {
 .nav .dropdown a {
   font-size: 1.6rem;
   text-transform: initial;
-  color: var(--color-accent_2) !important;
+  color: var(--color-accent_2);
   font-weight: 400;
   white-space: nowrap;
 }
@@ -812,8 +812,8 @@ a {
 #blog:hover .blog__message,
 #about:hover .about__message {
   position: absolute;
-  bottom: -70%;
-  left: 0;
+  bottom: 0;
+  right: 0;
   display: block;
   max-height: 100vh;
   opacity: 1;
@@ -845,7 +845,7 @@ a {
     position: initial;
     justify-content: center;
 
-    height: 60px;
+    height: 40px;
     margin: auto;
     padding: 0 9%;
     font-size: 1.6rem;
@@ -856,6 +856,7 @@ a {
   .nav__item {
     border: 0;
     transition: all 0.15s ease;
+    padding: 1rem 2rem;
   }
 
   .nav__item:hover {
@@ -864,7 +865,8 @@ a {
     border-top-right-radius: 15px;
   }
 
-  .nav__item:hover a {
+  .nav__item:hover a,
+  .nav__item .dropdown a {
     color: #fff;
     text-decoration: none;
   }
@@ -889,8 +891,9 @@ a {
   .nav .dropdown {
     position: absolute;
     padding-left: 1rem;
-    top: 60px;
-    background: var(--color-red-white);
+    left: 0;
+    top: 100%;
+    background: var(--color-primary);
   }
 
   .nav .dropdown .nav__item {
@@ -902,6 +905,14 @@ a {
   }
   .dropdown .nav__item:hover a {
     text-decoration: underline;
+    color: #fff;
+  }
+
+  #blog:hover .blog__message,
+  #about:hover .about__message {
+    left: 0;
+    bottom: -100%;
+    width: auto;
   }
 }
 
@@ -914,8 +925,7 @@ a {
 
 .presentation img {
   width: 100%;
-  aspect-ratio: 1/0.5;
-  object-fit: cover;
+
   max-width: 600px;
   justify-self: center;
   align-self: center;
@@ -932,6 +942,7 @@ a {
 .brand__name {
   font-size: 3rem;
   font-weight: bold;
+  color: #fff;
 }
 
 /*gallery preview */
@@ -1288,4 +1299,45 @@ footer .block__heading {
   justify-content: center;
   margin-block: 3rem;
   gap: 2rem;
+}
+
+/* About */
+
+.about {
+  line-height: 1.5;
+}
+
+.about h1 {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.about__presentation img {
+  width: 70px;
+  border: 3px solid #3e7a9c;
+  border-radius: 50%;
+  float: left;
+  margin-right: 2rem;
+}
+
+.about__presentation :nth-child(2) {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: var(--color-accent_2);
+  text-decoration: underline;
+}
+
+.about__presentation :nth-child(3) {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.about__text p {
+  line-height: 1.5;
+  line-break: strict;
+  font-size: 1.8rem;
+}
+
+.about__text .brand__name {
+  color: inherit;
 }

@@ -5,6 +5,124 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="nav__wrapper">
+      <nav class="nav container">
+        <input type="checkbox" id="icon-show" />
+        <a href="/"><img class="logo" src="images/logo-lg.png" alt="" /></a>
+
+        <label for="icon-show">
+          <svg onclick="showmenu()" class="icon icon--primary nav__toggler">
+            <use href="images/sprite.svg#menu"></use>
+          </svg>
+        </label>
+        <div class="input-group">
+          <input
+            type="text"
+            class="input"
+            placeholder="Chercher un article......"
+          />
+          <button class="btn btn--accent">
+            <svg class="icon">
+              <use href="images/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="icon__wrapper">
+          <a href="https://facebook.com/FamCameroun" title="Page Facebook">
+            <svg class="icon icon--secondary">
+              <use href="images/brands.svg#facebook"></use>
+            </svg>
+          </a>
+          <a href="https://twitter.com/FAM_Cameroun?s=09" title="Page Twitter">
+            <svg class="icon icon--secondary">
+              <use href="images/brands.svg#twitter"></use>
+            </svg>
+          </a>
+          <a
+            href="https://instagram.com/fam_cameroun?utm_medium=copy_link"
+            title="Page Instagram"
+          >
+            <svg class="icon icon--primary">
+              <use href="images/brands.svg#instagram"></use>
+            </svg>
+          </a>
+        </div>
+        <ul class="list nav__list">
+          <li class="nav__item"><a href="index.html">Accueil</a></li>
+          <li class="product nav__item collapsible">
+            <div class="collapsible__header">
+              <span class="special">PRODUITS </span>
+              <svg class="icon icon--small icon--primary collapsible__icon">
+                <use href="images/solid.svg#chevron-down"></use>
+              </svg>
+            </div>
+            <ul class="dropdown collapsible__content">
+              <li class="nav__item">
+                <a href="gallery_boxers.html">Boxers</a>
+              </li>
+              <li class="nav__item">
+                <a href="gallery__trousse.html">Trousses de bains</a>
+              </li>
+              <li class="nav__item">
+                <a href="galllery_pyjama.html">Pyjamas</a>
+              </li>
+              <li class="nav__item">
+                <a href="gallery_shirt.html">Pyjashirts</a>
+              </li>
+            </ul>
+          </li>
+          <li id="blog" class="nav__item">
+            <a href="#">blog</a>
+            <span class="blog__message">BIENTÔT DISPONIBLE</span>
+          </li>
+          <li id="about" class="nav__item">
+            <a href="#">à propos</a>
+            <span class="about__message">BIENTOT DISPONIBLE</span>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="about block">
+      <h1>À PROPOS DE FAM</h1>
+      <section class="about__presentation container">
+        <img src="images/fam-logo-content.png" alt="" />
+        <p>QUI EST FAM ?</p>
+        <p>Pour la petite histoire...</p>
+      </section>
+      <div class="about__text container">
+        <p>
+          <span class="brand__name">FAM</span> est une entreprise spécialisée
+          dans la lingerie masculine qui propose aux Camerounais en particulier
+          et aux africains en général des
+          <b>BOXEURS, CALEÇONS AFRITUDES, PYJAMAS, TROUSSES DE BAIN</b> conçus
+          pour eux , par des artisans Camerounais avec un savoir-faire et une
+          spécificité locale.
+        </p>
+        <p>
+          <span class="brand__name">FAM</span> nâit d'un désir ardent
+          d'autonomie et d'envie de proposer à la société Camerounaise un
+          produit exclusif et original. Trouver le nom a été un travail de
+          reflexion. Etant donée que la cible de la marque est exclusivement
+          masculine, il fallait Trouver un nom original, viril et représentatif
+          de la cible et de l'esprit, à savoir parler aux hommes Africains.
+          C'est ainsi que je me suis inspiré de l'appelation "d'<b>HOMME</b>" en
+          langue Beti, l'une des langues du Cameroun qui a donné <b>FAM</b>.
+        </p>
+        <p>
+          <span class="brand__name">FAM</span> est plus q'une marque, c'est une
+          vision. L'idée est de conquérir la mode en Afrique à travers la
+          lingerie pour hommes. Installer la marque dans l'esprit de la cible
+          comme une référence et détrôner les marques étrangères devenues des
+          références. Et pour cela, un soutien de votre part est un début vers
+          ce chemin.
+        </p>
+      </div>
+    </section>
+    <script src="list.js"></script>
+    <script src="main.js"></script>
+    <script src="preview.js"></script>
+  </body>
 </html>
