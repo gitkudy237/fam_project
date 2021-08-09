@@ -1237,7 +1237,9 @@ footer .block__heading {
   margin-bottom: 3rem;
   border-radius: 7px;
   overflow: hidden;
-  box-shadow: 3px 7px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 1300px;
 }
 
 .tab__list {
@@ -1262,7 +1264,7 @@ footer .block__heading {
   border-radius: 0;
   background: inherit;
   color: inherit;
-  line-height: 2;
+  padding: auto 0.5rem;
   transition: 0.15s ease;
   font-weight: 400;
   font-size: 2rem;
