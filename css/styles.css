@@ -665,6 +665,7 @@ a {
   background: var(--color-red-white);
   z-index: 100;
   margin-bottom: 0;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
 }
 
 .nav {
@@ -1276,6 +1277,7 @@ footer .block__heading {
 .gallery__content {
   width: 100%;
   overflow: hidden;
+  margin-bottom: 5rem;
 }
 
 .tab__content {
